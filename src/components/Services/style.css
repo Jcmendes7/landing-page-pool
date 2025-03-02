@@ -1,0 +1,60 @@
+.servicos {
+    background-color: #f4f4f9;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .servicos h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: var(--gray-900);
+  }
+  
+  .servicos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .servico {
+    width: 300px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .servico img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .servico h3 {
+    margin-top: 15px;
+    font-size: 22px;
+    color: var(--gray-900);
+  }
+  
+  .servico p {
+    margin-top: 10px;
+    color: var(--gray-500);
+    font-size: 16px;
+    text-align: justify;
+  }
+  
+  .servico:hover {
+    transform: translateY(-10px);
+  }
+  
+  @media (max-width: 660px) {
+    .servicos-container {
+      flex-direction: column;
+      gap: 15px;
+
+    }
+  }
+  
