@@ -18,7 +18,7 @@
   }
   
   .servico {
-    width: 300px;
+    width: 100%;
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
@@ -50,10 +50,21 @@
     transform: translateY(-10px);
   }
   
-  @media (max-width: 660px) {
+  @media (min-width: 660px) {
     .servicos-container {
-      flex-direction: column;
-      gap: 15px;
+      /* flex-direction: column; */
+      display: grid;
+      grid-template-columns: 300px 300px;
+      gap: 1rem;
+
+    }
+  }
+  @media (min-width: 980px) {
+    .servicos-container {
+      /* flex-direction: column; */
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      gap: 1rem;
 
     }
   }

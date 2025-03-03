@@ -29,11 +29,19 @@
 
   
   .hero-overlay {
+    display: flex;
+    flex-direction: column;
     background: rgba(0, 0, 0, 0.2);
     padding: 20px;
     border-radius: 10px;
+    gap: 1rem;
   }
-  
+  .title-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
   .hero h1 {
     font-size: 2rem;
     margin-bottom: 10px;
