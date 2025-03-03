@@ -5,19 +5,41 @@
     text-align: center;
     font-size: 16px;
     display: flex;
-    flex-direction: column;
+    
     align-items: center;
+    justify-content: space-around;
   }
+
   
   .footer p {
     margin: 10px 0;
   }
   
   .footer a {
-    color: var(--green-300);
+    color: var(--gray-100);
     text-decoration: none;
   }
   
+  .contato {
+    text-align: justify;
+  }
+
+  .contato p:first-child {
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+  #social-midia {
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 3px;
+  }
+
+  .social-midia-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
   .footer a:hover {
     color: var(--yellow-500);
     text-decoration: underline;
@@ -36,3 +58,10 @@
     color: var(--rose-600);
   }
   
+  @media (max-width: 660px) {
+    .footer {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }

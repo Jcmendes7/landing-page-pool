@@ -37,11 +37,13 @@
   .hero h1 {
     font-size: 2rem;
     margin-bottom: 10px;
+    text-align: left;
   }
   
   .hero p {
     font-size: 1.2rem;
     margin-bottom: 20px;
+    text-align: justify;
   }
   
   .cta-button {
