@@ -68,3 +68,8 @@
     background: var(--green-300);
   }
   
+  @media(min-width: 768px) {
+    .hero-overlay {
+      max-width: 400px;
+    }
+  }
